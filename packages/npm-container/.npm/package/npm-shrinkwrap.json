@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "pubnub": {
+      "version": "3.7.0",
+      "dependencies": {
+        "agentkeepalive": {
+          "version": "0.2.3"
+        }
+      }
+    }
+  }
+}
