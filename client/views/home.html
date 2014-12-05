@@ -4,4 +4,23 @@
             {{>questionItem}}
         {{/each}}
     </div>
+
+    <div class="ticker jumbotron2">
+        {{#each answerList}}
+            {{>answerItem}}
+        {{/each}}
+    </div>
 </template>
+
+<template name="user">
+    <div class="jumbotron">
+        {{hellouser}}
+    </div>
+</template>
+
+
+<template name='video'>
+    <div class="video" id='youtube-video'></div>
+</template>
+
+

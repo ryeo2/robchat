@@ -1,3 +1,20 @@
 <template name="questionItem">
     <div class="score">{{question}}</div>
+    <br/>
+    <div class="answer">{{options1}}</div>
+    <div class="answer">{{options2}}</div>
+    <div class="answer">{{options3}}</div>
+</template>
+
+
+<template name="answerItem">
+
+    {{#if isCheckAnswer}}
+        <div class="score">{{answer}}</div>
+        <br/>
+        <div>Since you are a BIG FAN of {{drink}}. Here is our latest commercial.</div>
+        {{>video}}
+    {{else}}
+        <div class="score">{{defaultAnswer}}</div>
+    {{/if}}
 </template>

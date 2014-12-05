@@ -8,6 +8,19 @@ Session.setDefault("counter", 0);
 
 Session.setDefault("cokecounter", 1);
 
+Session.setDefault("current_Answer","");
+
+Session.setDefault("current_User_Connected","");
+
+Session.setDefault("pepsi_url","https://www.youtube.com/embed/bdPz7aB-7_U");
+
+Session.setDefault("coke_url","https://www.youtube.com/embed/okTokQgOo6I");
+
+Session.setDefault("soda","");
+
+Session.setDefault("duration","");
+
+
 Template.hello.helpers({
     counter: function () {
         return Session.get("counter");
@@ -33,11 +46,15 @@ chatStream.on('message', function (message) {
 });
 
 
-Meteor.setInterval(function() {
+/*Meteor.setInterval(function() {
 
     Session.set("cokecounter", Math.floor((Math.random() * 3) + 1));
     console.log('Coke Counter: '+Session.get('cokecounter'));
-}, 3500);
+}, 3500);*/
+
+
+    Session.set("cokecounter", Math.floor((Math.random() * 6) + 1));
+    console.log('Coke Counter: '+Session.get('cokecounter'));
 
 
 //console.log('Current Coke: ', Session.get("current_coke"));

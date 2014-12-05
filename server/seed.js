@@ -9,19 +9,19 @@ if (Questions.find().count() === 0) {
 
     var questionId1 = Questions.insert({
         id: 1,
-        soda: 'coke',
+        soda: 'Coke',
         question: 'Who invented Coca-Cola?',
         answer: 'Doctor John Pemberton',
-        options1: 'John Pemberton',
+        options1: 'Doctor John Pemberton',
         options2: 'Henry Ford',
-        options3: 'John Pemberton',
+        options3: 'John Peabody',
         ts: +new Date
     });
 
 
     var questionId2 = Questions.insert({
         id: 2,
-        soda: 'coke',
+        soda: 'Coke',
         question: 'What year was Coke invented?',
         answer: '1886',
         options1: '1986',
@@ -33,8 +33,8 @@ if (Questions.find().count() === 0) {
 
     var questionId3 = Questions.insert({
         id: 3,
-        soda: 'coke',
-        question: 'Is it True Coca-Cola started as a Medicine?',
+        soda: 'Coke',
+        question: 'Is it true Coca-Cola started as medicine?',
         answer: 'Yes',
         options1: 'Yes',
         options2: 'No',
@@ -42,8 +42,8 @@ if (Questions.find().count() === 0) {
     });
 
     var questionId4 = Questions.insert({
-        id: 1,
-        soda: 'pepsi',
+        id: 4,
+        soda: 'Pepsi',
         question: 'What year was Pepsi created?',
         answer: '1893',
         options1: '1983',
@@ -53,8 +53,8 @@ if (Questions.find().count() === 0) {
     });
 
     var questionId5 = Questions.insert({
-        id: 1,
-        soda: 'pepsi',
+        id: 5,
+        soda: 'Pepsi',
         question: 'What was the original name of Pepsi?',
         answer: 'Brads Drink',
         options1: 'Sizzle',
@@ -64,8 +64,8 @@ if (Questions.find().count() === 0) {
     });
 
     var questionId6 = Questions.insert({
-        id: 1,
-        soda: 'pepsi',
+        id: 6,
+        soda: 'Pepsi',
         question: 'Who invented Pepsi?',
         answer: 'Caleb Bradham',
         options1: 'Hulk Hogan',
