@@ -23,7 +23,17 @@ Template.user.helpers({
             return "";
         } else {
             console.log('User IN');
-            return "Hello " + Session.get("current_User_Connected");
+            if (Session.equals("current_Status","exit")){
+
+            }
+            else {
+                return "Hello " + Session.get("current_User_Connected");
+            }
+        }
+
+        if (Session.equals("current_Status","exit")){
+            console.log('exit from user');
+            return "";
         }
     }
 });

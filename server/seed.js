@@ -11,7 +11,7 @@ if (Questions.find().count() === 0) {
         id: 1,
         soda: 'Coke',
         question: 'Who invented Coca-Cola?',
-        answer: 'Doctor John Pemberton',
+        answer: 'Dr John Pemberton',
         options1: 'Doctor John Pemberton',
         options2: 'Henry Ford',
         options3: 'John Peabody',
@@ -35,7 +35,7 @@ if (Questions.find().count() === 0) {
         id: 3,
         soda: 'Coke',
         question: 'Is it true Coca-Cola started as medicine?',
-        answer: 'Yes',
+        answer: 'yes',
         options1: 'Yes',
         options2: 'No',
         ts: +new Date
@@ -56,9 +56,9 @@ if (Questions.find().count() === 0) {
         id: 5,
         soda: 'Pepsi',
         question: 'What was the original name of Pepsi?',
-        answer: 'Brads Drink',
+        answer: 'Brad\'s drink',
         options1: 'Sizzle',
-        options2: 'Brads Drink',
+        options2: 'Brad\'s Drink',
         options3: 'Bolt',
         ts: +new Date
     });

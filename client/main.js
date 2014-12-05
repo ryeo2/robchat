@@ -10,7 +10,10 @@ Session.setDefault("cokecounter", 1);
 
 Session.setDefault("current_Answer","");
 
-Session.setDefault("current_User_Connected","");
+Session.setDefault("current_User_Connected","")
+
+Session.setDefault("current_Status","");
+
 
 Session.setDefault("pepsi_url","https://www.youtube.com/embed/bdPz7aB-7_U");
 
@@ -43,6 +46,21 @@ sendChat = function (message) {
 chatStream.on('message', function (message) {
     console.log('user: ' + message);
     console.dir(message);
+
+    if (message.user){
+        Session.set("current_User_Connected",message.user);
+        console.log('Name: '+Session.get("current_User_Connected"));
+    }
+
+    if (message.action){
+        Session.set("current_Status",message.action);
+        console.log('status: '+Session.get("current_Status"));
+    }
+
+    if (message.voice){
+        Session.set("current_Answer",message.voice);
+        console.log('Answer: '+Session.get("current_Answer"));
+    }
 });
 
 
